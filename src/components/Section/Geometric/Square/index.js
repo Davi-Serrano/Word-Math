@@ -19,8 +19,8 @@ export const Square = () =>{
 
     return(
 
-        <div>
-
+        <div>   
+                <h2>Quadrados</h2>
                 <label> Qual o tamnho tem um dos lados do quadrado? </label>
                 <input type="number" min="1" id="size" />
                 <h3>Área:${area}</h3>
