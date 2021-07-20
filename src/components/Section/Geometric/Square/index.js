@@ -23,8 +23,8 @@ export const Square = () =>{
                 <h2>Quadrados</h2>
                 <label> Qual o tamanho tem um dos lados do quadrado? </label>
                 <input type="number" min="1" id="size" />
-                <h3>Área:${area}</h3>
-                <h3>Perimetro:${perimeter} </h3>
+                <h3>Área:{area}</h3>
+                <h3>Perimetro:{perimeter} </h3>
                 <button onClick={CalcSquare}>Calcular</button>
 
         </div>
