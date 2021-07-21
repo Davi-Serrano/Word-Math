@@ -21,7 +21,6 @@ export const Triangle = () =>{
             
         }
         
-        console.log(area, perimeter)
 
     return(
 

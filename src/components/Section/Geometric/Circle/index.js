@@ -17,7 +17,6 @@ export const Circle = () =>{
             
         }
         
-        console.log(perimeterC)
 
     return(
 

@@ -17,8 +17,7 @@ export const Rectangle = () =>{
             
             
         }
-        
-        console.log(area, perimeter)
+    
 
     return(
 

@@ -15,7 +15,6 @@ export const Square = () =>{
             
         }
         
-        console.log(area, perimeter)
 
     return(
 
