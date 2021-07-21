@@ -109,3 +109,28 @@ export const RectBtn = styled.div`
 
 
 `
+
+export const CircleBtn = styled.div`    
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        margin-top: 50px;
+       
+        width: 100px;
+        height: 100px;
+        border: 1px solid red ;
+        
+        font-size: 25px;
+        border-radius: 50px;
+
+        transition: 1s ease;
+        transform: scale(0.8);
+
+                &:hover{
+                    cursor: pointer;
+                    transform: scale(1);
+                }
+
+`

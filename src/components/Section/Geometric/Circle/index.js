@@ -1,5 +1,7 @@
 import { useState } from "react"
 
+import { GeoStyle, Title, CircleBtn } from "../Square/style"
+
 export const Circle = () =>{
 
     const [ areaC, setAreaC] = useState(0)
@@ -21,12 +23,25 @@ export const Circle = () =>{
     return(
 
         <div>   
-                <h2>Circulo</h2>
-                <label> Qual o tamanho do Raio do círculo? </label>
-                <input type="number" min="1" id="radius" />
-                <h3>Área:{areaC.toFixed(2)} </h3>
-                <h3>Perimetro:{perimeterC.toFixed(2)} </h3>
-                <button onClick={CalcCircle}>Calcular</button>
+                <Title>Circulo</Title>
+
+                < GeoStyle>
+
+                    <div className="question">
+
+                        <label> Qual o tamanho do Raio do círculo? </label>
+                        <input type="number" min="1" id="radius" />
+                        <CircleBtn onClick={CalcCircle}>Calcular</CircleBtn>
+
+                    </div>
+
+                    <div className="result">
+
+                        <h3>Área:{areaC.toFixed(2)} </h3>
+                        <h3>Perimetro:{perimeterC.toFixed(2)} </h3>
+
+                    </div>
+                </GeoStyle>
 
         </div>
 
