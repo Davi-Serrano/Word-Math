@@ -8,6 +8,7 @@ import Header from "./components/Header/index"
 import { Section } from "./components/Section";
 
 
+
 function App() {
   
 
@@ -17,9 +18,9 @@ function App() {
     <ThemeProvider theme={theme}>
    
       < Header />
+      
       < Section />
 
-  
       < GlobalStyle/>
 
    

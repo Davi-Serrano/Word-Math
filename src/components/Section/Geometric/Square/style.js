@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Title = styled.h2`
         font-size: 55px;
+        border: 1px solid red
 `
 export const GeoStyle = styled.div`
     display: flex;
@@ -10,7 +11,8 @@ export const GeoStyle = styled.div`
     align-items: flex-start;
 
     border: 1px solid red;
-    height: 85vh;
+    height: 80vh;
+    width: 80vw;
 
     
     .question{
