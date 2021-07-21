@@ -8,7 +8,7 @@ export const GeoStyle = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
 
     border: 1px solid red;
     height: 80vh;

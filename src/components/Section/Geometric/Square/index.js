@@ -28,7 +28,7 @@ export const Square = () =>{
         <GeoStyle>   
             <div className="question">
 
-                <label> Qual o tamanho tem um dos lados do quadrado? </label>
+                <label> Qual o tamanho de um dos lados do quadrado? </label>
                 <input type="number" min="1" id="size" />
 
                 <div className="Square" onClick={CalcSquare}>Calcular</div>
