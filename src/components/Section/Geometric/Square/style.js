@@ -134,3 +134,38 @@ export const CircleBtn = styled.div`
                 }
 
 `
+
+export const TriaBtn = styled.div`
+
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 50px;
+
+    width: 0; 
+    height: 0; 
+
+            
+    border-left: 150px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 80px solid #5386E4;
+
+    transform: scale(0.8);
+    
+
+    .calc{
+        margin-top: 20px;
+        
+    }
+
+        transition: 2s ease;
+    
+
+                &:hover{
+                    cursor: pointer;
+                    border-left: 1px solid transparent;
+                    border-right: 150px solid transparent;
+                 
+                    
+                 }
+
+`

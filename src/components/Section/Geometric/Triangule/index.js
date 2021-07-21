@@ -1,5 +1,7 @@
 import { useState } from "react"
 
+import { GeoStyle, Title, TriaBtn } from "../Square/style"
+
 export const Triangle = () =>{
 
     const [ area, setArea] = useState(0)
@@ -25,14 +27,32 @@ export const Triangle = () =>{
     return(
 
         <div>
-                <h2>Triângulo</h2>
-                <label> Qual o tamanho do lado A do retângulo? </label>
-                <input type="number" min="1" id="width" />
-                <label> Qual o tamanho do lado B do retângulo? </label>
-                <input type="number" min="1" id="height" />
+                <Title>Triângulo</Title>
+                < GeoStyle>
+                <div className="question">
+
+                    <label> Qual o tamanho do lado A do retângulo? </label>
+                    <input type="number" min="1" id="width" />
+                
+                    <label> Qual o tamanho do lado B do retângulo? </label>
+                    <input type="number" min="1" id="height" />
+                
+                    <TriaBtn onClick={CalcTriangle}>
+                        <div className="calc">
+                            calcular
+                        </div>
+                     </TriaBtn>
+                
+                </div>
+
+            <div className="result">
+
                 <h3>Área:{area}</h3>
                 <h3>Perimetro:{perimeter.toFixed(2)} </h3>
-                <button onClick={CalcTriangle}>Calcular</button>
+               
+            </div>
+               
+                </GeoStyle>
 
         </div>
 
