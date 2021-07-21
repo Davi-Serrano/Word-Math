@@ -1,5 +1,6 @@
 import { GeoStyle } from "./style"
 import { Title } from "./style"
+import { SquareBtn } from "./style"
 
 import { useState } from "react"
 
@@ -31,7 +32,7 @@ export const Square = () =>{
                 <label> Qual o tamanho de um dos lados do quadrado? </label>
                 <input type="number" min="1" id="size" />
 
-                <div className="Square" onClick={CalcSquare}>Calcular</div>
+                <SquareBtn onClick={CalcSquare}>Calcular</SquareBtn>
 
             </div>
             <div className="result">

@@ -19,6 +19,7 @@ export const GeoStyle = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 50%;
 
         margin-left: 0;
 
@@ -55,7 +56,14 @@ export const GeoStyle = styled.div`
         width: 450px;
         
     }
-    .Square{
+    
+
+
+`
+
+
+export const SquareBtn = styled.div`
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -73,7 +81,31 @@ export const GeoStyle = styled.div`
                     cursor: pointer;
                     transform: rotate( 0deg);
                 }
-    }
+    
+`
+
+export const RectBtn = styled.div`
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        margin-top: 50px;
+       
+        width: 100px;
+        height: 100px;
+        border: 1px solid red ;
+        
+        font-size: 25px;
+
+
+        transition: 1s ease;
+
+                &:hover{
+                    cursor: pointer;
+                    height: 50px;;
+                }
 
 
 `

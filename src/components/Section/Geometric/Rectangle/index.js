@@ -1,5 +1,7 @@
 import { useState } from "react"
 
+import { GeoStyle, Title, RectBtn } from "../Square/style"
+
 export const Rectangle = () =>{
 
     const [ area, setArea] = useState(0)
@@ -22,15 +24,22 @@ export const Rectangle = () =>{
     return(
 
         <div>
-                <h2>Retâgulos</h2>
-                <label> Qual o tamanho do lado A do retângulo? </label>
-                <input type="number" min="1" id="sizeRectA" />
-                <label> Qual o tamanho do lado B do retângulo? </label>
-                <input type="number" min="1" id="sizeRectB" />
-                <h3>Área:{area}</h3>
-                <h3>Perimetro:{perimeter} </h3>
-                <button onClick={CalcRectangle}>Calcular</button>
+                <Title>Retâgulos</Title>
 
+                <GeoStyle>
+
+                    <div className="question">
+                        <label> Qual o tamanho do lado A do retângulo? </label>
+                        <input type="number" min="1" id="sizeRectA" />
+                        <label> Qual o tamanho do lado B do retângulo? </label>
+                        <input type="number" min="1" id="sizeRectB" />
+                        <RectBtn onClick={CalcRectangle}>Calcular</RectBtn>
+                    </div>
+                    <div className="result">
+                        <h3>Área:{area}</h3>
+                        <h3>Perimetro:{perimeter} </h3>
+                    </div>                        
+                </GeoStyle>
         </div>
 
     )}
