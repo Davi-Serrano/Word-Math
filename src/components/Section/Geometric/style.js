@@ -2,14 +2,19 @@ import styled from "styled-components";
 
 export const Title = styled.h2`
         font-size: 55px;
-        border: 1px solid red
-`
+        border: 1px solid red;
+
+        background-color: #FAFFFD;
+        `
 export const GeoStyle = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-
+    
+    background-color: #2E86AB;
+    color:white;
+    
     border: 1px solid red;
     height: 80vh;
     width: 80vw;
@@ -57,7 +62,6 @@ export const GeoStyle = styled.div`
         
     }
     
-
 
 `
 
