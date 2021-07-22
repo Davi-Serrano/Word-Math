@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-import { GeoStyle, Title, CircleBtn } from "../Square/style"
+import { GeoStyle, Title, CircleBtn } from "../style"
 
 export const Circle = () =>{
 

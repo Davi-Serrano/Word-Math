@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-import { GeoStyle, Title, RectBtn } from "../Square/style"
+import { GeoStyle, Title, RectBtn } from "../style"
 
 export const Rectangle = () =>{
 

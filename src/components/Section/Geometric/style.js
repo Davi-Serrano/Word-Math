@@ -169,3 +169,36 @@ export const TriaBtn = styled.div`
                  }
 
 `
+
+export const IndxBtnNext = styled.div`
+
+        height: 80px;
+        width: 80px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border: 1px solid red;
+
+        position: absolute;
+        top: 70%;
+        left: 80%;
+
+`
+
+export const IndxBtnBack = styled.div`
+
+        height: 80px;
+        width: 80px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border: 1px solid red;
+
+        position: absolute;
+        top: 70%;
+        left: 35%;
+`

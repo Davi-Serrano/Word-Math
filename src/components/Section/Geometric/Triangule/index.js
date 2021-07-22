@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-import { GeoStyle, Title, TriaBtn } from "../Square/style"
+import { GeoStyle, Title, TriaBtn } from "../style"
 
 export const Triangle = () =>{
 

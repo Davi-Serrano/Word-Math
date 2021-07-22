@@ -1,6 +1,6 @@
-import { GeoStyle } from "./style"
-import { Title } from "./style"
-import { SquareBtn } from "./style"
+import { GeoStyle } from "../style"
+import { Title } from "../style"
+import { SquareBtn } from "../style"
 
 import { useState } from "react"
 

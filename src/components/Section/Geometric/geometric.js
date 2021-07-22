@@ -1,5 +1,7 @@
 import { useState } from "react"
 
+import { IndxBtnNext, IndxBtnBack } from "./style"
+
 import { Square } from "./Square"
 import { Rectangle } from "./Rectangle"
 import { Circle } from "./Circle"
@@ -36,8 +38,11 @@ export const Geometric = () =>{
            <div>
 
                 <Square />
-                <button onClick={Proximo}> Next</button>
-                <button onClick={Final}> Back</button>
+
+
+                
+                <IndxBtnNext onClick={Proximo}> Next</IndxBtnNext>
+                <IndxBtnBack onClick={Final}> Back</IndxBtnBack>
             </div>
            )
     }
@@ -47,8 +52,8 @@ export const Geometric = () =>{
             <div>
  
                  <Rectangle />
-                 <button onClick={Proximo}> Next</button>
-                 <button onClick={Voltar}> Back</button>
+                 <IndxBtnNext onClick={Proximo}> Next</IndxBtnNext>
+                 <IndxBtnBack onClick={Voltar}> Back</IndxBtnBack>
              </div>
             )
  
@@ -59,8 +64,8 @@ export const Geometric = () =>{
             <div>
  
                  <Circle />
-                 <button onClick={Proximo}> Next</button>
-                 <button onClick={Voltar}> Back</button>
+                 <IndxBtnNext onClick={Proximo}> Next</IndxBtnNext>
+                 <IndxBtnBack onClick={Voltar}> Back</IndxBtnBack>
              </div>
             )
  
@@ -71,8 +76,8 @@ export const Geometric = () =>{
             <div>
  
                  <Triangle />
-                 <button onClick={Inicio}> Next</button>
-                 <button onClick={Voltar}> Back</button>
+                 <IndxBtnNext onClick={Inicio}> Next</IndxBtnNext>
+                 <IndxBtnBack onClick={Voltar}> Back</IndxBtnBack>
              </div>
             )
 
