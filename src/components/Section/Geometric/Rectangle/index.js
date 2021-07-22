@@ -24,7 +24,7 @@ export const Rectangle = () =>{
     return(
 
         <div>
-                <Title>Retâgulos</Title>
+                <Title>Retângulos</Title>
 
                 <GeoStyle>
 
@@ -37,7 +37,7 @@ export const Rectangle = () =>{
                     </div>
                     <div className="result">
                         <h3>Área:{area}</h3>
-                        <h3>Perimetro:{perimeter} </h3>
+                        <h3>Perímetro:{perimeter} </h3>
                     </div>                        
                 </GeoStyle>
         </div>

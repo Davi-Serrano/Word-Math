@@ -38,7 +38,7 @@ export const Circle = () =>{
                     <div className="result">
 
                         <h3>Área:{areaC.toFixed(2)} </h3>
-                        <h3>Perimetro:{perimeterC.toFixed(2)} </h3>
+                        <h3>Perímetro:{perimeterC.toFixed(2)} </h3>
 
                     </div>
                 </GeoStyle>
