@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Title = styled.h2`
         font-size: 55px;
-        border: 1px solid red;
+
 
         background-color: #FAFFFD;
         `
@@ -15,8 +15,7 @@ export const GeoStyle = styled.div`
     background-color: #2E86AB;
     color:white;
     
-    border: 1px solid red;
-    height: 80vh;
+    height:84vh;
     width: 80vw;
 
     
@@ -49,14 +48,12 @@ export const GeoStyle = styled.div`
             border: 1px solid black;
             text-align: center;
         }
-        border: 1px solid red;
     }
 
     .result{
         display: flex;
         justify-content: space-around;
 
-        border: 1px solid red;
         font-size: 25px;
         width: 450px;
         
@@ -124,7 +121,6 @@ export const CircleBtn = styled.div`
        
         width: 100px;
         height: 100px;
-        border: 1px solid red ;
         
         font-size: 25px;
         border-radius: 50px;
