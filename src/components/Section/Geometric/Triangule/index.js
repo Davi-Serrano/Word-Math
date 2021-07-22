@@ -14,11 +14,21 @@ export const Triangle = () =>{
             const Width = parseInt(width)
             const Height = parseInt(height)
 
-            setArea(Width*Height/2)
 
-            const Pitagoras = Width**2 + Height**2
+            if(Width <= 0 || Height <=0 || !Width || !Height ){
+                alert("Por favor coloque um número válido ou responda todas as perguntas!!")
+            }else{
 
-            setPerimeter(Math.sqrt(Pitagoras) + Width + Height)
+                setArea(Width*Height/2)
+    
+                const Pitagoras = Width**2 + Height**2
+    
+                setPerimeter(Math.sqrt(Pitagoras) + Width + Height)
+            }
+
+
+
+
             
             
         }

@@ -13,9 +13,14 @@ export const Square = () =>{
             const size = document.querySelector("#size").value        
             const Size = parseInt(size)
 
-            setArea(Size*Size)
-            setPerimeter(Size*4)
-            
+
+            if(Size <= 0 || !Size){
+                alert("Por favor coloque um número válido")
+            }else{
+                setArea(Size*Size)
+                setPerimeter(Size*4)    
+
+            }
             
         }
         

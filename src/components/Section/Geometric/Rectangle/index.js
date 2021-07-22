@@ -14,8 +14,13 @@ export const Rectangle = () =>{
             const SizeA = parseInt(sizeA)
             const SizeB = parseInt(sizeB)
 
-            setArea(SizeA*SizeB)
-            setPerimeter(SizeA*2 + SizeB*2)
+            if(SizeA <= 0 || SizeB <=0 || !SizeA || !SizeB ){
+                alert("Por favor coloque um número válido ou responda todas as perguntas!!")
+            }else{
+                setArea(SizeA*SizeB)
+                setPerimeter(SizeA*2 + SizeB*2)
+
+            }
             
             
         }

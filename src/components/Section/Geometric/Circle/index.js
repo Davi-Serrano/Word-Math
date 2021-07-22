@@ -13,8 +13,15 @@ export const Circle = () =>{
             const r = document.querySelector("#radius").value        
             const R = parseInt(r)
 
-            setAreaC(Math.PI*R**2)
-            setPerimeterC(Math.PI*2*R)
+
+            if(R <= 0 | !R){
+                alert("Por favor coloque um número válido")
+            }
+            else{
+                setAreaC(Math.PI*R**2)
+                setPerimeterC(Math.PI*2*R)
+            }
+                
             
             
         }
