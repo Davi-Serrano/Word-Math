@@ -37,8 +37,8 @@ export const Square = () =>{
             </div>
             <div className="result">
 
-                <p>Área:{area}</p>
-                <p>Perimetro:{perimeter} </p>
+                <h3>Área:{area}</h3>
+                <h3>Perímetro:{perimeter} </h3>
             </div>
 
         </GeoStyle>

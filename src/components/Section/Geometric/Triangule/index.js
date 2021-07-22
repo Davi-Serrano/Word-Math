@@ -31,15 +31,15 @@ export const Triangle = () =>{
                 < GeoStyle>
                 <div className="question">
 
-                    <label> Qual o tamanho do lado A do retângulo? </label>
+                    <label> Qual o tamanho da Altura do Triângulo? </label>
                     <input type="number" min="1" id="width" />
                 
-                    <label> Qual o tamanho do lado B do retângulo? </label>
+                    <label> Qual o tamanho da Base do Triângulo? </label>
                     <input type="number" min="1" id="height" />
                 
                     <TriaBtn onClick={CalcTriangle}>
                         <div className="calc">
-                            calcular
+                            Calcular
                         </div>
                      </TriaBtn>
                 
@@ -48,7 +48,7 @@ export const Triangle = () =>{
             <div className="result">
 
                 <h3>Área:{area}</h3>
-                <h3>Perimetro:{perimeter.toFixed(2)} </h3>
+                <h3>Perímetro:{perimeter.toFixed(2)} </h3>
                
             </div>
                
