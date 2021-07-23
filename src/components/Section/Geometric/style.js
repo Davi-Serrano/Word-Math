@@ -3,9 +3,8 @@ import styled from "styled-components";
 export const Title = styled.h2`
         font-size: 55px;
         
-
-
         background-color: #FAFFFD;
+
         `
 export const GeoStyle = styled.div`
     display: flex;
@@ -71,7 +70,9 @@ export const SquareBtn = styled.div`
         align-items: center;
         width: 100px;
         height: 100px;
-        border: 1px solid red ;
+        
+        border: 2px solid white;
+        background-color: #565554;
         
         font-size: 25px;
 
@@ -97,7 +98,9 @@ export const RectBtn = styled.div`
        
         width: 100px;
         height: 100px;
-        border: 1px solid red ;
+        
+        border: 2px solid white;
+        background-color: #565554;
         
         font-size: 25px;
 
@@ -126,6 +129,9 @@ export const CircleBtn = styled.div`
         font-size: 25px;
         border-radius: 50px;
 
+        border: 2px solid white;
+        background-color: #565554;
+
         transition: 1s ease;
         transform: scale(0.8);
 
@@ -148,7 +154,7 @@ export const TriaBtn = styled.div`
             
     border-left: 150px solid transparent;
     border-right: 1px solid transparent;
-    border-bottom: 80px solid #5386E4;
+    border-bottom: 80px solid #565554;
 
     transform: scale(0.8);
     
@@ -193,7 +199,8 @@ export const IndxBtnNext = styled.div`
         transition: 0.5s ease;
 
         &:hover{
-                transform: scale(1) ;
+                transform: scale(1);
+                cursor: pointer;
         }
 
 `
@@ -219,7 +226,8 @@ export const IndxBtnBack = styled.div`
         transition: 0.5s ease;
 
         &:hover{
-                transform: scale(1) ;
+                transform: scale(1);
+                cursor: pointer;
         }
 
 `

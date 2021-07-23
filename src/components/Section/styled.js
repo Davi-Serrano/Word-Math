@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const Aside = styled.div`
-        color: white;
-        height: 80vh;
+        height: 94vh;
         width: 20vw;
+        border-right: 3px solid black;
 `
 
 export const Lado = styled.div`
         display: flex;
-        background-color: #565554;
+
 `
