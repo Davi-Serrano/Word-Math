@@ -30,7 +30,7 @@ export const Circle = () =>{
     return(
 
         <div>   
-                <Title>Circulo</Title>
+                <Title>Círculo</Title>
 
                 < GeoStyle>
 
