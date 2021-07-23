@@ -2,10 +2,12 @@ import styled from "styled-components";
 
 export const Title = styled.h2`
         font-size: 55px;
+
+        margin-left: 50px;
         
         background-color: #FAFFFD;
 
-        `
+`
 export const GeoStyle = styled.div`
     display: flex;
     flex-direction: column;

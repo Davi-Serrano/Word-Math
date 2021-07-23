@@ -29,7 +29,7 @@ export const Square = () =>{
 
         <div>
 
-        <Title>Quadrados</Title>
+        <Title>Quadrado</Title>
               
         <GeoStyle>   
             <div className="question">
