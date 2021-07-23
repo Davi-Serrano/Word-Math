@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Title = styled.h2`
         font-size: 55px;
+        
 
 
         background-color: #FAFFFD;
@@ -179,11 +180,21 @@ export const IndxBtnNext = styled.div`
         justify-content: center;
         align-items: center;
 
-        border: 1px solid red;
+        border: 2px solid white;
+        background-color: #565554;
+        color: white;
+
 
         position: absolute;
         top: 70%;
         left: 80%;
+
+        transform: scale(0.8);
+        transition: 0.5s ease;
+
+        &:hover{
+                transform: scale(1) ;
+        }
 
 `
 
@@ -196,9 +207,19 @@ export const IndxBtnBack = styled.div`
         justify-content: center;
         align-items: center;
 
-        border: 1px solid red;
+        border: 2px solid white;
+        background-color: #565554;
+        color: white;
 
         position: absolute;
         top: 70%;
         left: 35%;
+
+        transform: scale(0.8);
+        transition: 0.5s ease;
+
+        &:hover{
+                transform: scale(1) ;
+        }
+
 `
