@@ -1,16 +1,24 @@
- import { Topz } from "./style"
- 
+ import { Topheader } from "./style";
+ import { FiAlignJustify } from 'react-icons/fi';
  const Header = () => {
+    
+    function ShowMenu(){
+
+        alert("Oi")
+    }
+    
+    
+    
     return (
-        
-        <div className="header">
             
-            <Topz >
-              Word Math
-            </Topz >
+            <Topheader >
+              Word Math <div className="icon"> 
+              < FiAlignJustify onClick={ShowMenu}/>
+              </div> 
+            </Topheader >
 
 
-        </div>
+        
 
     )}
 
