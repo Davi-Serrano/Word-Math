@@ -1,4 +1,4 @@
-
+import IndexPageProvider from "./Context/IndexPage";
 
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme} from "./styles/theme"
@@ -16,13 +16,15 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-   
-      < Header />
-      
-      < Section />
+      < IndexPageProvider>
+          
+          < Header />
+          
+          < Section />
 
-      < GlobalStyle/>
+          < GlobalStyle/>
 
+      </IndexPageProvider>
    
     </ThemeProvider>
   );

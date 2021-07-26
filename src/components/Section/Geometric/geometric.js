@@ -1,5 +1,7 @@
 import { useState } from "react"
 
+import { useIndexPage } from "../../../Context/IndexPage"
+
 import { IndxBtnNext, IndxBtnBack } from "./style"
 
 import { Square } from "./Square"
@@ -9,30 +11,30 @@ import { Triangle } from "./Triangule"
 
 export const Geometric = () =>{
     
-    const [ indexG, setIndexG ] = useState(0)
+    const { IndexPage, setIndexPage}  = useIndexPage()
 
     function Proximo(){
 
-         setIndexG(indexG + 1)
+        setIndexPage(IndexPage + 1)
    
     }
 
     function Inicio(){
-        setIndexG(indexG - 3)
+        setIndexPage(IndexPage - 3)
     }
 
     function Voltar(){
 
-        setIndexG(indexG - 1)
+        setIndexPage(IndexPage - 1)
 
     }
 
     function Final(){
-        setIndexG( indexG + 3)
+        setIndexPage( IndexPage + 3)
     }
 
     
-    if( indexG === 0) {
+    if( IndexPage === 0) {
        return (
 
            <div>
@@ -46,7 +48,7 @@ export const Geometric = () =>{
             </div>
            )
     }
-    if( indexG === 1) {
+    if( IndexPage === 1) {
         return(
 
             <div>
@@ -58,7 +60,7 @@ export const Geometric = () =>{
             )
  
      }
-     if( indexG === 2) {
+     if( IndexPage === 2) {
         return  (
 
             <div>
@@ -70,7 +72,7 @@ export const Geometric = () =>{
             )
  
      }
-     if( indexG === 3) {
+     if( IndexPage === 3) {
         return(
 
             <div>
