@@ -7,6 +7,10 @@ export const Aside = styled.div`
        
         @media(max-width: 800px) {
                  display: none;
+
+                 .show{
+                    display: block;
+                        }
          }
 `
 

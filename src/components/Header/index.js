@@ -1,19 +1,24 @@
- import { Topheader } from "./style";
+import { useState } from "react";
+
+import { Topheader } from "./style";
  import { FiAlignJustify } from 'react-icons/fi';
  const Header = () => {
+
+  const [ hide, setHide ]= useState(false)
     
     function ShowMenu(){
 
-        alert("Oi")
+      setHide(!hide)
     }
     
     
     
     return (
             
-            <Topheader >
-              Word Math <div className="icon"> 
-              < FiAlignJustify onClick={ShowMenu}/>
+            <Topheader>
+             <h3 className={`show ${hide ? "hide": "" }`}> Word Math </h3>
+              <div className="icon"> 
+              < FiAlignJustify onClick={ShowMenu} />
               </div> 
             </Topheader >
 

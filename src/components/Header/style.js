@@ -12,6 +12,8 @@ export const Topheader = styled.h1`
         display: none;
     }
 
+    
+
     @media(max-width: 800px) {
         justify-content: space-between;
         padding-left: 10px;
