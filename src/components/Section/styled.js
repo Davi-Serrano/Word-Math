@@ -6,11 +6,11 @@ export const Aside = styled.div`
         border-right: 3px solid black;
        
         @media(max-width: 800px) {
-                 display: none;
-
-                 .show{
-                    display: block;
-                        }
+            
+          .show{
+                  display: none;
+        
+          }      
          }
 `
 

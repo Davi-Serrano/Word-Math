@@ -1,14 +1,15 @@
-import { useState } from "react";
+import { useShowMenu } from "../../Context/Menu";
 
 import { Topheader } from "./style";
  import { FiAlignJustify } from 'react-icons/fi';
  const Header = () => {
 
-  const [ hide, setHide ]= useState(false)
+  const { showMenu , setShowMenu} = useShowMenu()
+  
     
-    function ShowMenu(){
+    function MenuMob(){
 
-      setHide(!hide)
+      setShowMenu(!showMenu)
     }
     
     
@@ -16,9 +17,9 @@ import { Topheader } from "./style";
     return (
             
             <Topheader>
-             <h3 className={`show ${hide ? "hide": "" }`}> Word Math </h3>
+              Word Math 
               <div className="icon"> 
-              < FiAlignJustify onClick={ShowMenu} />
+              < FiAlignJustify onClick={MenuMob} />
               </div> 
             </Topheader >
 

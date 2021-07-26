@@ -11,6 +11,20 @@ export const MenuA = styled.div`
             }
         }
 
+        @media(max-width: 800px) {
+            
+        width: 100vw;
+        position: absolute ;
+        background-color: #2E86AB;
+        height: 100vh;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+
+           }
+
 `
 
 export const List = styled.div`
