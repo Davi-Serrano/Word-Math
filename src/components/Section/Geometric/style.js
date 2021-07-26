@@ -160,20 +160,42 @@ export const CircleBtn = styled.div`
 
 export const TriaBtn = styled.div`
 
-    display: inline-block;
-    margin-top: 20px;
-    margin-right: 50px;
+        display: inline-block;
+        margin-top: 20px;
+        margin-right: 50px;
 
-    width: 0; 
-    height: 0; 
+        width: 0; 
+        height: 0; 
 
-            
-    border-left: 150px solid transparent;
-    border-right: 1px solid transparent;
-    border-bottom: 80px solid #565554;
+                
+        border-left: 150px solid transparent;
+        border-right: 1px solid transparent;
+        border-bottom: 80px solid #565554;
 
-    transform: scale(0.8);
+        transform: scale(0.8);
     
+        @media(max-width: 800px) {
+        width: 150px; 
+        height: 100px; 
+
+        border: 2px solid white;
+        background-color: #565554;
+        margin-top: 0px;
+        margin-right:0px ;
+        margin-left: 50px;
+           
+        .calc{
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        &:hover{
+                    cursor: pointer;
+                    border-left: none;
+                    border-right: none;
+                 
+                    
+                 }
+    }
 
     .calc{
         margin-top: 20px;
