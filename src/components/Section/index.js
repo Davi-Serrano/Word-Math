@@ -1,4 +1,4 @@
-import { Aside, Lado } from "./styled"
+import { Aside, Navegation } from "./styled"
 
 import { Geometric } from "./Geometric/geometric"
 import { Nav } from "../Menu"
@@ -8,12 +8,12 @@ export const Section = () =>{
     
 return(
 
-        <Lado>
+        <Navegation>
             <Aside >
             < Nav />
             </Aside>
             < Geometric />
-        </Lado>
+        </Navegation>
 )
         
         

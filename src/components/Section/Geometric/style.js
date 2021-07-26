@@ -20,6 +20,14 @@ export const GeoStyle = styled.div`
     height:84vh;
     width: 80vw;
 
+    @media(max-width: 800px) {
+                 width: 98vw;
+
+                 label{
+                     padding-left: 15px;
+                 }
+         }
+
     
     .question{
         display: flex;
@@ -86,6 +94,12 @@ export const SquareBtn = styled.div`
                     cursor: pointer;
                     transform: rotate( 0deg);
                 }
+            
+                @media(max-width: 800px) {
+                 transform: rotate(0);
+         }
+
+                
     
 `
 
@@ -231,5 +245,10 @@ export const IndxBtnBack = styled.div`
                 transform: scale(1);
                 cursor: pointer;
         }
+
+        @media(max-width: 800px) {
+            left: 15%;
+         }
+
 
 `
