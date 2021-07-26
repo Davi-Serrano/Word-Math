@@ -4,17 +4,26 @@ export const MenuA = styled.div`
 
         font-size: 35px;
 
+        li{
+            list-style: none;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
 `
 
 export const List = styled.div`
 
         font-size: 20px;
         padding-left: 35px;
+
+        
         li{
             list-style: none;
         }
 
-        .equation{
+        .hide{
             display: none;
         }
         .geometric{
