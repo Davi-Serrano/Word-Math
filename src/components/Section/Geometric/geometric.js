@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 import { useIndexPage } from "../../../Context/IndexPage"
 
 import { IndxBtnNext, IndxBtnBack } from "./style"

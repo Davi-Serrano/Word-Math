@@ -6,7 +6,7 @@ export const MenuA = styled.div`
 
 `
 
-export const MenuB = styled.div`
+export const List = styled.div`
 
         font-size: 20px;
         padding-left: 35px;
@@ -18,10 +18,11 @@ export const MenuB = styled.div`
             display: none;
         }
         .geometric{
-            display: block;
+            display: none;
         }
         .functions{
             display: none;
         }
+        
 
 `
