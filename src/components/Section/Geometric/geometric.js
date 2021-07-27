@@ -6,6 +6,7 @@ import { Square } from "./Square"
 import { Rectangle } from "./Rectangle"
 import { Circle } from "./Circle"
 import { Triangle } from "./Triangule"
+import { Addition } from "../Fraction/Addition"
 
 export const Geometric = () =>{
     
@@ -37,7 +38,7 @@ export const Geometric = () =>{
 
            <div>
 
-                <Square />
+                <Addition />
 
 
                 
