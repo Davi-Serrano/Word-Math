@@ -1,6 +1,8 @@
 import { useState } from "react"
 import { List } from "../styled"
 
+ import { BsArrowDownShort } from "react-icons/bs";
+
 import { useIndexPage } from "../../../Context/IndexPage"
 
 export const MenuList = () => {
@@ -30,34 +32,33 @@ export const MenuList = () => {
     return(
 
         <ul>
-            <li onClick={ShowEquation}>Equaçoes</li>
+            <li onClick={ShowEquation}>Frações <BsArrowDownShort size={20} /></li>
                     
                     <List>
                         <ul  className={ ` ${onehide ? "hide" : ""}`} >
-                            <li>Primeiro grau</li>
-                            <li>Segundo Grau</li>
-                            <li>Sistema de Equações</li>
+                            <li>Adição</li>
+                            <li>Subtração</li>
+                            <li>Multiplicação</li>
+                            <li>Divisão</li>
                         </ul>
                     </List>
 
-            <li onClick={ShowGeometric}>Geometria</li>
+            <li onClick={ShowGeometric}>Geometria <BsArrowDownShort size={20} /></li>
 
                 <List >
                     <ul className={ ` ${twohide ? "hide" : ""}`}  >
                         <li onClick= { () => setIndexPage( IndexPage * 0 )}>Quadrado </li>
                         <li onClick= { () => setIndexPage( IndexPage * 0 + 1)}>Retângulo</li>
                         <li onClick= { () => setIndexPage( IndexPage * 0 + 2)}>Círculo</li>
-                        <li onClick= { () => setIndexPage( IndexPage * 0 + 3)}>Triâgulo</li>
+                        <li onClick= { () => setIndexPage( IndexPage * 0 + 3)}>Triângulo</li>
                     </ul>
                 </List>
                 
-             <li onClick={ShowFunction}>Funções</li>
+             <li onClick={ShowFunction}>Funções <BsArrowDownShort size={20} /></li>
 
                 <List >
                     <ul className={ ` ${threehide ? "hide" : ""}`} >
                         <li>Primeiro grau</li>
-                        <li>Segundo Grau</li>
-                        <li>Sistema de Equações</li>
                     </ul>
                 </List>
 
