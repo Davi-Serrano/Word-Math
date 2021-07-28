@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Title = styled.h2`
         font-size: 55px;
 
-        margin-left: 50px;
+        padding-left: 50px;
         
         background-color: #FAFFFD;
 
@@ -14,7 +14,7 @@ export const GeoStyle = styled.div`
     justify-content: space-around;
     align-items: center;
     
-    background-color: #2E86AB;
+    
     color:white;
     
     height:84vh;

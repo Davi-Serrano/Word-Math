@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Title = styled.h2`
         font-size: 55px;
 
-        margin-left: 50px;
+        padding-left: 50px;
         
         background-color: #FAFFFD;
 
@@ -14,8 +14,7 @@ export const Account = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #2E86AB;
-    color:white;
+        color:white;
     
     height:84vh;
     width: 80vw;
@@ -27,7 +26,7 @@ export const Account = styled.div`
 
 export const FractionStyle = styled.div`
 
-display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     

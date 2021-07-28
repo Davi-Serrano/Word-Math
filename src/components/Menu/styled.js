@@ -28,7 +28,8 @@ export const MenuA = styled.div `
             
             width: 100vw;
             position: absolute ;
-            background-color: #2E86AB;
+            color: white;
+            background-color: ${props => props.theme.colors.background};
             height: 100vh;
             z-index: 10;
             display: flex;

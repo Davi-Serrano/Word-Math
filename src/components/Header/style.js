@@ -6,8 +6,6 @@ export const Topheader = styled.h1`
     justify-content: center;
 
 
-    background-color: #2E86AB;
-
     .icon{
         display: none;
     }
