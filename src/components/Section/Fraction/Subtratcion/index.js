@@ -1,7 +1,32 @@
-import {Title, Account, FractionStyle, FractNumber, CalcBtn, SinalMath } from "../styled"
+import { useState } from "react"
+
+import {Title, Account, FractionStyle, FractNumber, CalcBtn, SinalMath, ResponseFrac } from "../styled"
 
 export const Subtratcion = () =>{
 
+
+    const [ Numerator, setNumerator ] = useState(0)
+    const [ Denominator, setDenominator ] = useState(0)
+
+function CalcSubtratcion () {
+    
+    const numeratorA = document.querySelector("#numA").value
+    const numeratorB = document.querySelector("#numB").value
+    const denominatorA = document.querySelector("#denA").value
+    const denominatorB = document.querySelector("#denB").value
+
+    const NumA = parseInt(numeratorA)
+    const NumB = parseInt(numeratorB)
+
+    const DenA = parseInt(denominatorA)
+    const DenB = parseInt(denominatorB)
+
+
+    setNumerator((NumA * DenB) - (NumB * DenA))
+    setDenominator(DenA * DenB)
+    
+    
+}
 
     return(
 
@@ -10,22 +35,22 @@ export const Subtratcion = () =>{
                     <Account>
                         <FractionStyle>
                                 <FractNumber>
-                                    <input type="number" min="1" />
-                                    <input type="number" min="1" />
+                                    <input type="number" id="numA" min="1" />
+                                    <input type="number" id="denA" min="1" />
                                 </FractNumber>
                                     <SinalMath>-</SinalMath>
                                 <FractNumber>
-                                    <input type="number" min="1" />
-                                    <input type="number" min="1" />
+                                    <input type="number" id="numB" min="1"  />
+                                    <input type="number" id="denB" min="1" />
                                 </FractNumber>
                                 <SinalMath>=</SinalMath>
                                 <FractNumber>
-                                    <input type="number" min="1" />
-                                    <input type="number" min="1" />
+                                    <ResponseFrac>{Numerator}</ResponseFrac>
+                                    <ResponseFrac>{Denominator}</ResponseFrac>
                                 </FractNumber>
 
                     </FractionStyle>
-                                <CalcBtn>Calcular</CalcBtn>
+                                <CalcBtn onClick={CalcSubtratcion}>Calcular</CalcBtn>
                     </Account>
 
             </div>
