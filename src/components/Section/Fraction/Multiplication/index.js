@@ -1,12 +1,12 @@
 import { useState } from "react"
 
-import {Title, Account, FractionStyle, FractNumber, CalcBtn, SinalMath } from "../styled"
+import {Title, Account, FractionStyle, FractNumber, CalcBtn, SinalMath, ResponseFrac } from "../styled"
 
 export const Multiplication = () =>{
 
 
-    const [ Numerator, setNumerator ] = useState()
-    const [ Denominator, setDenominator ] = useState()
+    const [ Numerator, setNumerator ] = useState(0)
+    const [ Denominator, setDenominator ] = useState(0)
 
 function CalcMultiplication () {
     
@@ -27,7 +27,7 @@ function CalcMultiplication () {
     
     
 }
-var RespNum = 0
+
     return(
 
             <div>
@@ -44,9 +44,9 @@ var RespNum = 0
                                     <input type="number" id="denB" min="1" />
                                 </FractNumber>
                                 <SinalMath>=</SinalMath>
-                                <FractNumber>/
-                                    <input  value={Numerator}  />
-                                    <input  value={Denominator}  />
+                                <FractNumber>
+                                    <ResponseFrac>{Numerator}</ResponseFrac>
+                                    <ResponseFrac>{Denominator}</ResponseFrac>
                                 </FractNumber>
 
                     </FractionStyle>

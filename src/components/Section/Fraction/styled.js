@@ -93,7 +93,24 @@ export const CalcBtn = styled.div`
              }
 `
 export const SinalMath = styled.div`
-    font-size: 35px;
-    margin-left: 35px;
+            font-size: 35px;
+            margin-left: 35px;
 
+`
+
+export const ResponseFrac = styled.div`
+
+            width: 100px;
+
+            font-size: 35px;
+
+            border: 0px solid black;
+            text-align: center;
+            background-color: white;
+            color: black;
+            
+                &:last-child{
+            
+                    border-top: 2px solid black;
+        }
 `

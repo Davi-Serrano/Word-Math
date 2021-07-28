@@ -10,8 +10,6 @@ export const Section = () =>{
     
     const { showMenu} =useShowMenu()
 
-    console.log(showMenu)
-
 return(
 
         <Navegation>
