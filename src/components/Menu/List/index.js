@@ -36,10 +36,10 @@ export const MenuList = () => {
                     
                     <List>
                         <ul  className={ ` ${onehide ? "hide" : ""}`} >
-                            <li>Adição</li>
-                            <li>Subtração</li>
-                            <li>Multiplicação</li>
-                            <li>Divisão</li>
+                            <li onClick= { () => setIndexPage( IndexPage * 0 + 4)}>Adição</li>
+                            <li onClick= { () => setIndexPage( IndexPage * 0 + 5)}>Subtração</li>
+                            <li onClick= { () => setIndexPage( IndexPage * 0 + 6)}>Multiplicação</li>
+                            <li onClick= { () => setIndexPage( IndexPage * 0 + 7)}>Divisão</li>
                         </ul>
                     </List>
 

@@ -6,7 +6,7 @@ export const Multiplication = () =>{
     return(
 
             <div>
-                <Title>Subtração</Title>
+                <Title>Multipicação</Title>
                     <Account>
                         <FractionStyle>
                                 <FractNumber>

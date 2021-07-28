@@ -5,7 +5,7 @@ export const ShowMenuContext = createContext();
 export default function ShowMenuProvider({ children }){
 
 
-    const [ showMenu, setShowMenu ] = useState(false);
+    const [ showMenu, setShowMenu ] = useState(true);
 
     return(
 

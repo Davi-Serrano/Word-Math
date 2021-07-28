@@ -6,7 +6,11 @@ import { Square } from "./Square"
 import { Rectangle } from "./Rectangle"
 import { Circle } from "./Circle"
 import { Triangle } from "./Triangule"
+
+import { Addition } from "../Fraction/Addition"
 import { Subtratcion } from "../Fraction/Subtratcion"
+import { Multiplication } from "../Fraction/Multiplication"
+import { Division } from "../Fraction/Division"
 
 export const Geometric = () =>{
     
@@ -38,7 +42,7 @@ export const Geometric = () =>{
 
            <div>
 
-                <Subtratcion />
+                <Square />
 
 
                 
@@ -84,7 +88,41 @@ export const Geometric = () =>{
 
  
      }
-               
+
+     if( IndexPage === 4) {
+        return (
+ 
+             <Addition />
+             
+            
+            )
+        } 
+
+    if( IndexPage === 5) {
+        return (
+     
+                <Subtratcion />
+                 
+                
+                )
+            }  
+
+    if( IndexPage === 6) {
+        return (
+         
+                 <Multiplication />
+                     
+                    
+                    )
+                }  
+    if( IndexPage === 7) {
+        return (
+             
+                <Division />
+                         
+                        
+                )
+                    }  
         
     
         
