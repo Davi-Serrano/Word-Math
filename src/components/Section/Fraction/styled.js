@@ -19,6 +19,9 @@ export const Account = styled.div`
     
     height:84vh;
     width: 80vw;
+    @media(max-width: 800px) {
+                 width: 98vw;
+                }
 
 `
 
@@ -28,11 +31,8 @@ display: flex;
     justify-content: center;
     align-items: center;
     
-    
-    
-
     @media(max-width: 800px) {
-                 width: 98vw;
+
 
                  label{
                      padding-left: 15px;
