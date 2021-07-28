@@ -16,24 +16,26 @@ export const Geometric = () =>{
     
     const { IndexPage, setIndexPage}  = useIndexPage()
 
-    function Proximo(){
+    function NextGeometric(){
 
         setIndexPage(IndexPage + 1)
    
     }
 
-    function Inicio(){
-        setIndexPage(IndexPage - 3)
-    }
-
-    function Voltar(){
+    function BackGeometric(){
 
         setIndexPage(IndexPage - 1)
 
     }
 
-    function Final(){
-        setIndexPage( IndexPage + 3)
+    function NextFraction(){
+        setIndexPage(IndexPage + 1)
+    }
+
+    function BackFraction(){
+
+        setIndexPage(IndexPage - 1)
+
     }
 
     
@@ -46,8 +48,8 @@ export const Geometric = () =>{
 
 
                 
-                <IndxBtnNext onClick={Proximo}> Next</IndxBtnNext>
-                <IndxBtnBack onClick={Final}> Back</IndxBtnBack>
+                <IndxBtnNext onClick={NextGeometric}> Next</IndxBtnNext>
+                <IndxBtnBack onClick={()=> setIndexPage(3)}> Back</IndxBtnBack>
             </div>
            )
     }
@@ -57,8 +59,8 @@ export const Geometric = () =>{
             <div>
  
                  <Rectangle />
-                 <IndxBtnNext onClick={Proximo}> Next</IndxBtnNext>
-                 <IndxBtnBack onClick={Voltar}> Back</IndxBtnBack>
+                 <IndxBtnNext onClick={NextGeometric}> Next</IndxBtnNext>
+                 <IndxBtnBack onClick={BackGeometric}> Back</IndxBtnBack>
              </div>
             )
  
@@ -69,8 +71,8 @@ export const Geometric = () =>{
             <div>
  
                  <Circle />
-                 <IndxBtnNext onClick={Proximo}> Next</IndxBtnNext>
-                 <IndxBtnBack onClick={Voltar}> Back</IndxBtnBack>
+                 <IndxBtnNext onClick={NextGeometric}> Next</IndxBtnNext>
+                 <IndxBtnBack onClick={BackGeometric}> Back</IndxBtnBack>
              </div>
             )
  
@@ -81,9 +83,9 @@ export const Geometric = () =>{
             <div>
  
                  <Triangle />
-                 <IndxBtnNext onClick={Inicio}> Next</IndxBtnNext>
-                 <IndxBtnBack onClick={Voltar}> Back</IndxBtnBack>
-             </div>
+                 <IndxBtnNext onClick={()=> setIndexPage(0)}> Next</IndxBtnNext>
+                 <IndxBtnBack onClick={BackGeometric}> Back</IndxBtnBack>
+            </div>
             )
 
  
@@ -92,8 +94,12 @@ export const Geometric = () =>{
      if( IndexPage === 4) {
         return (
  
-             <Addition />
-             
+            <div>
+ 
+                 <Addition />
+                 <IndxBtnNext onClick={NextFraction} > Next</IndxBtnNext>
+                 <IndxBtnBack onClick={()=> setIndexPage(7)}> Back</IndxBtnBack>
+             </div>
             
             )
         } 
@@ -101,7 +107,12 @@ export const Geometric = () =>{
     if( IndexPage === 5) {
         return (
      
+            <div>
+ 
                 <Subtratcion />
+                <IndxBtnNext onClick={NextFraction}> Next</IndxBtnNext>
+                <IndxBtnBack onClick={BackFraction}> Back</IndxBtnBack>
+            </div>
                  
                 
                 )
@@ -110,7 +121,12 @@ export const Geometric = () =>{
     if( IndexPage === 6) {
         return (
          
-                 <Multiplication />
+            <div>
+ 
+            <Multiplication />
+            <IndxBtnNext onClick={NextFraction}> Next</IndxBtnNext>
+            <IndxBtnBack onClick={BackFraction}> Back</IndxBtnBack>
+            </div>
                      
                     
                     )
@@ -118,7 +134,12 @@ export const Geometric = () =>{
     if( IndexPage === 7) {
         return (
              
-                <Division />
+            <div>
+ 
+            <Division />
+            <IndxBtnNext onClick={()=> setIndexPage(4)}> Next</IndxBtnNext>
+            <IndxBtnBack onClick={BackFraction}> Back</IndxBtnBack>
+            </div>
                          
                         
                 )
