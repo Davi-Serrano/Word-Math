@@ -4,8 +4,11 @@ import { List } from "../styled"
  import { BsArrowDownShort } from "react-icons/bs";
 
 import { useIndexPage } from "../../../Context/IndexPage"
+import { useShowMenu } from "../../../Context/Menu"
 
 export const MenuList = () => {
+
+    const { setShowMenu } = useShowMenu()
 
     const { IndexPage, setIndexPage } = useIndexPage()
 
@@ -28,6 +31,7 @@ export const MenuList = () => {
         setThreehide(!threehide)
     }
 
+  
 
     return(
 
@@ -36,10 +40,25 @@ export const MenuList = () => {
                     
                     <List>
                         <ul  className={ ` ${onehide ? "hide" : ""}`} >
-                            <li onClick= { () => setIndexPage( IndexPage * 0 + 4)}>Adição</li>
-                            <li onClick= { () => setIndexPage( IndexPage * 0 + 5)}>Subtração</li>
-                            <li onClick= { () => setIndexPage( IndexPage * 0 + 6)}>Multiplicação</li>
-                            <li onClick= { () => setIndexPage( IndexPage * 0 + 7)}>Divisão</li>
+                            <li onClick= { () => {  setIndexPage( IndexPage * 0 + 4) 
+                                                    setShowMenu(true)}}
+                            >Adição
+                            </li>
+
+                            <li onClick= { () => {  setIndexPage( IndexPage * 0 + 5) 
+                                                    setShowMenu(true)}}
+                            >Subtração
+                            </li>
+
+                            <li onClick= { () => {  setIndexPage( IndexPage * 0 + 6) 
+                                                    setShowMenu(true)}}
+                            >Multiplicação
+                            </li>
+                           
+                            <li onClick= { () => {  setIndexPage( IndexPage * 0 + 7) 
+                                                    setShowMenu(true)}}
+                            >Divisão
+                            </li>
                         </ul>
                     </List>
 
@@ -47,10 +66,22 @@ export const MenuList = () => {
 
                 <List >
                     <ul className={ ` ${twohide ? "hide" : ""}`}  >
-                        <li onClick= { () => setIndexPage( IndexPage * 0 )}>Quadrado </li>
-                        <li onClick= { () => setIndexPage( IndexPage * 0 + 1)}>Retângulo</li>
-                        <li onClick= { () => setIndexPage( IndexPage * 0 + 2)}>Círculo</li>
-                        <li onClick= { () => setIndexPage( IndexPage * 0 + 3)}>Triângulo</li>
+                        <li onClick= { () => {  setIndexPage( IndexPage * 0 ) 
+                                                        setShowMenu(true)}}
+                                >Multiplicação
+                        </li>
+                        <li onClick= { () => {  setIndexPage( IndexPage * 0 + 1) 
+                                                        setShowMenu(true)}}
+                                >Retâgulo
+                        </li>
+                        <li onClick= { () => {  setIndexPage( IndexPage * 0 + 2) 
+                                                        setShowMenu(true)}}
+                                >Círculo
+                        </li>
+                        <li onClick= { () => {  setIndexPage( IndexPage * 0 + 3) 
+                                                        setShowMenu(true)}}
+                                >Triângulo
+                        </li>
                     </ul>
                 </List>
                 

@@ -75,6 +75,13 @@ export const FractNumber = styled.div`
         input:last-child{
             border-top: 2px solid black;
         }
+        @media(max-width: 800px) {
+
+           input{
+               width: 60px;
+        } 
+               
+        }
 
 `
 
@@ -113,4 +120,9 @@ export const ResponseFrac = styled.div`
             
                     border-top: 2px solid black;
         }
+
+        @media(max-width: 800px) {
+
+            width: 60px;
+}
 `
