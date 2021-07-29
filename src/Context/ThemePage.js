@@ -5,13 +5,13 @@ export const ThemePageContext = createContext();
 export default function ThemePageProvider({ children }){
 
 
-    const [ themw, setTheme ] = useState("ligth");
+    const [ Theme, setTheme ] = useState("ligth");
 
     return(
 
         <ThemePageContext.Provider
         value={{
-            theme,
+            Theme,
             setTheme
         }}
         >      
@@ -24,7 +24,7 @@ export default function ThemePageProvider({ children }){
 
 export function useThemePage(){
     const context = useContext(ThemePageContext)
-    const { theme, setTheme}  = context ;
+    const { Theme, setTheme }  = context ;
 
-    return  { theme, setTheme};
+    return  { Theme, setTheme};
 }

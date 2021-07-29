@@ -23,6 +23,13 @@ export const MenuA = styled.div `
                 background-color: ${props => props.theme.colors.backgroundHover};
             }
         }
+        
+        .BtnTheme{
+        margin-top: 200px;
+        margin-left: 50px;
+
+        }
+
 
         @media(max-width: 800px) {
             
@@ -40,8 +47,12 @@ export const MenuA = styled.div `
         h3, li{
             border: 0px solid black;
         }
-
-           }
+        .BtnTheme{
+        margin-top: 50px;   
+        }
+    
+    }
+        
 
 `
 
