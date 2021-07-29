@@ -20,7 +20,7 @@ export const MenuA = styled.div `
             text-align: center;
             &:hover{
                 cursor: pointer;
-                background-color: #81b6cc;
+                background-color: ${props => props.theme.colors.backgroundHover};
             }
         }
 
