@@ -1,3 +1,5 @@
+import { useState } from "react"
+
 import IndexPageProvider from "./Context/IndexPage";
 import ShowMenuProvider from "./Context/Menu"
 
@@ -13,16 +15,22 @@ import { Section } from "./components/Section";
 
 function App() {
   
+  var [ theme, setTheme ] = useState("ligth")
 
-  var theme = darkTheme
+function handleTheme(){
 
+  theme === "ligth" ? setTheme("dark") : setTheme("ligth")
+
+}
+
+console.log(theme)
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme === "ligth" ? lightTheme : darkTheme}>
       < IndexPageProvider>
       < ShowMenuProvider>
           
           < Header />
-          
+          <button onClick={handleTheme}> Mudar Tema</button>
           < Section />
 
          
