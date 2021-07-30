@@ -68,7 +68,7 @@ export const MenuList = () => {
                     <ul className={ ` ${twohide ? "hide" : ""}`}  >
                         <li onClick= { () => {  setIndexPage( IndexPage * 0 ) 
                                                         setShowMenu(true)}}
-                                >Multiplicação
+                                >Quadrado
                         </li>
                         <li onClick= { () => {  setIndexPage( IndexPage * 0 + 1) 
                                                         setShowMenu(true)}}

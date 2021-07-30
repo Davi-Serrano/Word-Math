@@ -45,6 +45,7 @@ export const FuncStyle = styled.div`
             border: none;
             border: 1px solid black;
             text-align: center;
+            font-weight: bold;
         }
     }
 
@@ -67,13 +68,18 @@ export const Resp = styled.div`
 
             width: 50px;
 
-            margin-right: 1em;
+            margin: 0 0.5em;
                 
             border: 1px solid black;
             background-color: white;
+            color: black;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
             
             font-size: 15px;
-            text-align: center;
+            font-weight: bold;
         
 
 `
