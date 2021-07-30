@@ -25,8 +25,9 @@ export const MenuA = styled.div `
         }
         
         .BtnTheme{
-        margin-top: 200px;
-        margin-left: 50px;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
 
         }
 
