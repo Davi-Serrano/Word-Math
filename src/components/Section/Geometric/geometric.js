@@ -12,6 +12,8 @@ import { Subtratcion } from "../Fraction/Subtratcion"
 import { Multiplication } from "../Fraction/Multiplication"
 import { Division } from "../Fraction/Division"
 
+import { FuncFirst } from "../Func"
+
 export const Geometric = () =>{
     
     const { IndexPage, setIndexPage}  = useIndexPage()
@@ -44,7 +46,7 @@ export const Geometric = () =>{
 
            <div>
 
-                <Square />
+                <FuncFirst />
 
 
                 
