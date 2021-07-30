@@ -17,7 +17,12 @@ export const  FuncFirst = () =>{
         const X = parseInt(x)
         const B = parseInt(b)
 
-        setY(A * X + B)
+        if(!A || !B || !X){
+            alert("Por favor coloque um número válido em todos os campos!!")
+        }else{
+            setY(A * X + B)
+        }
+
 
     }
 
