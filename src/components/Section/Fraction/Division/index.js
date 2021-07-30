@@ -20,10 +20,12 @@ function CalcDivision () {
     const DenA = parseInt(denominatorA)
     const DenB = parseInt(denominatorB)
 
-
+    if(!NumA || !NumB || !DenA || !DenB){
+        alert("Por favor coloque um número válido em todos os campos!!")
+    }else{
     setNumerator(NumA * DenA)
     setDenominator(NumB * DenB)
-
+    }
 }
     return(
 

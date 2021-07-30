@@ -22,8 +22,15 @@ function CalcAddition () {
     const DenB = parseInt(denominatorB)
 
 
-    setNumerator((NumA * DenB) + (NumB * DenA))
-    setDenominator(DenA * DenB)
+    if(!NumA || !NumB || !DenA || !DenB){
+        alert("Por favor coloque um número válido em todos os campos!!")
+    }else{
+
+        setNumerator((NumA * DenB) + (NumB * DenA))
+        setDenominator(DenA * DenB)
+    }
+
+
     
     
 }

@@ -21,10 +21,13 @@ function CalcSubtratcion () {
     const DenA = parseInt(denominatorA)
     const DenB = parseInt(denominatorB)
 
+    if(!NumA || !NumB || !DenA || !DenB){
+        alert("Por favor coloque um número válido em todos os campos!!")
+    }else{
 
-    setNumerator((NumA * DenB) - (NumB * DenA))
-    setDenominator(DenA * DenB)
-    
+        setNumerator((NumA * DenB) - (NumB * DenA))
+        setDenominator(DenA * DenB)
+    }
     
 }
 

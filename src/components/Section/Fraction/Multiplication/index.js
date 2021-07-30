@@ -21,10 +21,13 @@ function CalcMultiplication () {
     const DenA = parseInt(denominatorA)
     const DenB = parseInt(denominatorB)
 
+    if(!NumA || !NumB || !DenA || !DenB){
+        alert("Por favor coloque um número válido em todos os campos!!")
+    }else{
 
     setNumerator(NumA * NumB)
     setDenominator(DenA * DenB)
-    
+}
     
 }
 
