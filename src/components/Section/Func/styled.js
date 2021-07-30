@@ -98,6 +98,15 @@ export const CalcBtn = styled.div`
              }
 `
 
+export const Graph = styled.div`
+
+            width: 500px;
+            border: 2px solid white;
+            background-color: white;
+
+    
+`
+
 export const IndxBtnNext = styled.div`
 
         height: 80px;
@@ -157,3 +166,4 @@ export const IndxBtnBack = styled.div`
 
 
 `
+
