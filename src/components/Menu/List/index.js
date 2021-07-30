@@ -89,7 +89,10 @@ export const MenuList = () => {
 
                 <List >
                     <ul className={ ` ${threehide ? "hide" : ""}`} >
-                        <li>Primeiro grau</li>
+                        <li onClick= { () => {  setIndexPage( IndexPage * 0 + 8) 
+                                                            setShowMenu(true)}}
+                                    >Primeiro Grau
+                            </li>
                     </ul>
                 </List>
 

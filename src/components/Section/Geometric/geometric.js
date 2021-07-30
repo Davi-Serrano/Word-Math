@@ -12,7 +12,7 @@ import { Subtratcion } from "../Fraction/Subtratcion"
 import { Multiplication } from "../Fraction/Multiplication"
 import { Division } from "../Fraction/Division"
 
-import { FuncFirst } from "../Func"
+import { FuncFirst } from "../Func/index"
 
 export const Geometric = () =>{
     
@@ -45,11 +45,7 @@ export const Geometric = () =>{
        return (
 
            <div>
-
-                <FuncFirst />
-
-
-                
+                <Square/>  
                 <IndxBtnNext onClick={NextGeometric}> Next</IndxBtnNext>
                 <IndxBtnBack onClick={()=> setIndexPage(3)}> Back</IndxBtnBack>
             </div>
@@ -59,7 +55,6 @@ export const Geometric = () =>{
         return(
 
             <div>
- 
                  <Rectangle />
                  <IndxBtnNext onClick={NextGeometric}> Next</IndxBtnNext>
                  <IndxBtnBack onClick={BackGeometric}> Back</IndxBtnBack>
@@ -83,7 +78,6 @@ export const Geometric = () =>{
         return(
 
             <div>
- 
                  <Triangle />
                  <IndxBtnNext onClick={()=> setIndexPage(0)}> Next</IndxBtnNext>
                  <IndxBtnBack onClick={BackGeometric}> Back</IndxBtnBack>
@@ -97,7 +91,6 @@ export const Geometric = () =>{
         return (
  
             <div>
- 
                  <Addition />
                  <IndxBtnNext onClick={NextFraction} > Next</IndxBtnNext>
                  <IndxBtnBack onClick={()=> setIndexPage(7)}> Back</IndxBtnBack>
@@ -110,7 +103,6 @@ export const Geometric = () =>{
         return (
      
             <div>
- 
                 <Subtratcion />
                 <IndxBtnNext onClick={NextFraction}> Next</IndxBtnNext>
                 <IndxBtnBack onClick={BackFraction}> Back</IndxBtnBack>
@@ -124,10 +116,9 @@ export const Geometric = () =>{
         return (
          
             <div>
- 
-            <Multiplication />
-            <IndxBtnNext onClick={NextFraction}> Next</IndxBtnNext>
-            <IndxBtnBack onClick={BackFraction}> Back</IndxBtnBack>
+                <Multiplication />
+                <IndxBtnNext onClick={NextFraction}> Next</IndxBtnNext>
+                <IndxBtnBack onClick={BackFraction}> Back</IndxBtnBack>
             </div>
                      
                     
@@ -137,17 +128,23 @@ export const Geometric = () =>{
         return (
              
             <div>
- 
-            <Division />
-            <IndxBtnNext onClick={()=> setIndexPage(4)}> Next</IndxBtnNext>
-            <IndxBtnBack onClick={BackFraction}> Back</IndxBtnBack>
+                <Division />
+                <IndxBtnNext onClick={()=> setIndexPage(4)}> Next</IndxBtnNext>
+                <IndxBtnBack onClick={BackFraction}> Back</IndxBtnBack>
             </div>
                          
                         
                 )
                     }  
         
-    
+    if( IndexPage === 8){
+        return(
+
+            <div>
+                <FuncFirst />
+            </div>
+            )
+    }
         
         
     }
