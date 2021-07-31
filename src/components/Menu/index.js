@@ -29,9 +29,9 @@ return(
                         height={25}
                         width={80}
                         handleDiameter={40}
-                        onColor={"#9999"}
-                        onHandleColor={"#000"}
-                        offColor={"#9999"}
+                        onColor={"#999999"}
+                        onHandleColor={"#000000"}
+                        offColor={"#999999"}
                         offHandleColor={"#81b6cc"}
                     />
         </div>

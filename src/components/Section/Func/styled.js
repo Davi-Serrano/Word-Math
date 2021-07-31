@@ -57,9 +57,15 @@ export const FuncStyle = styled.div`
     @media(max-width: 800px) {
             
             width: 98vw;
-    
 
-         }
+            .question {
+                input{
+            width: 25px;
+            height: 25px;      
+            font-size: 10px;
+            }
+        }
+    }
     
     
     `
@@ -80,7 +86,13 @@ export const Resp = styled.div`
             
             font-size: 15px;
             font-weight: bold;
-        
+                
+                @media (max-width: 800px){
+                    width: 25px;
+                    height: 25px;      
+                    font-size: 10px;
+                
+            }
 
 `
 export const CalcBtn = styled.div`
@@ -96,6 +108,8 @@ export const CalcBtn = styled.div`
                  transform: translateY(-5px);
                  cursor: pointer;
              }
+
+      
 `
 
 export const Graph = styled.div`
@@ -103,6 +117,13 @@ export const Graph = styled.div`
             width: 500px;
             border: 2px solid white;
             background-color: white;
+
+            @media (max-width: 800px){
+                   
+                width: 250px;
+                
+            }
+
 
     
 `
