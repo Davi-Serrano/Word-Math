@@ -61,7 +61,7 @@ export const FuncStyle = styled.div`
 
     @media(max-width: 800px) {
             
-            width: 98vw;
+            width: 100vw;
 
             .question {
                 input{

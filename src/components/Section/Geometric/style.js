@@ -31,7 +31,6 @@ export const GeoStyle = styled.div`
         align-items: center;
         height: 50%;
         
-        width: 80%;
         flex-wrap: wrap;
         
         font-size: 35px;
@@ -67,7 +66,7 @@ export const GeoStyle = styled.div`
     }
 
     @media(max-width: 800px) {
-                 width: 100%;
+                 width: 100vw;
                  align-items: flex-start;
 
 
