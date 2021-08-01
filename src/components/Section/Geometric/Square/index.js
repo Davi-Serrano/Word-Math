@@ -37,9 +37,9 @@ export const Square = () =>{
                 <label> Qual o tamanho de um dos lados do quadrado? </label>
                 <input type="number" min="1" id="size" />
 
-                <SquareBtn onClick={CalcSquare}>Calcular</SquareBtn>
 
             </div>
+                <SquareBtn onClick={CalcSquare}>Calcular</SquareBtn>
             <div className="result">
 
                 <h3>Área:{area}</h3>

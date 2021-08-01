@@ -38,8 +38,8 @@ export const Rectangle = () =>{
                         <input type="number" min="1" id="sizeRectA" />
                         <label> Qual o tamanho do lado B do retângulo? </label>
                         <input type="number" min="1" id="sizeRectB" />
-                        <RectBtn onClick={CalcRectangle}>Calcular</RectBtn>
                     </div>
+                        <RectBtn onClick={CalcRectangle}>Calcular</RectBtn>
                     <div className="result">
                         <h3>Área:{area}</h3>
                         <h3>Perímetro:{perimeter} </h3>

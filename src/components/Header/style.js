@@ -4,6 +4,7 @@ export const Topheader = styled.h1`
 
     display: flex;
     justify-content: center;
+    width: 100%;
 
 
     .icon{
@@ -19,7 +20,7 @@ export const Topheader = styled.h1`
 
                  .icon{
                      display: block;
-                     margin-right: 10px;
+                     
                  }
          }
 

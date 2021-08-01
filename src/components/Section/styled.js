@@ -8,6 +8,8 @@ export const Aside = styled.div`
         color: black;
        
         @media(max-width: 800px) {
+
+                border: 0px;
             
           .show{
                   display: none;
@@ -19,6 +21,5 @@ export const Aside = styled.div`
 export const Navegation = styled.div`
         display: flex;
         color: black;
-         
 
 `

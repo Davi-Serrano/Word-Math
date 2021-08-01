@@ -6,6 +6,11 @@ export const Title = styled.h2`
         padding-left: 50px;
         
         background-color: #FAFFFD;
+       
+        @media (max-width: 800px){
+            font-size: 25px;
+            padding-left: 15px;
+        }
 
 `
 export const FuncStyle = styled.div`
@@ -128,63 +133,4 @@ export const Graph = styled.div`
     
 `
 
-export const IndxBtnNext = styled.div`
-
-        height: 80px;
-        width: 80px;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        border: 2px solid white;
-        background-color: #565554;
-        color: white;
-
-
-        position: absolute;
-        top: 70%;
-        left: 80%;
-
-        transform: scale(0.8);
-        transition: 0.5s ease;
-
-        &:hover{
-                transform: scale(1);
-                cursor: pointer;
-        }
-
-`
-
-export const IndxBtnBack = styled.div`
-
-        height: 80px;
-        width: 80px;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        border: 2px solid white;
-        background-color: #565554;
-        color: white;
-
-        position: absolute;
-        top: 70%;
-        left: 35%;
-
-        transform: scale(0.8);
-        transition: 0.5s ease;
-
-        &:hover{
-                transform: scale(1);
-                cursor: pointer;
-        }
-
-        @media(max-width: 800px) {
-            left: 15%;
-         }
-
-
-`
 

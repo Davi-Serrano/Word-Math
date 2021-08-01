@@ -38,9 +38,9 @@ export const Circle = () =>{
 
                         <label> Qual o tamanho do Raio do círculo? </label>
                         <input type="number" min="1" id="radius" />
-                        <CircleBtn onClick={CalcCircle}>Calcular</CircleBtn>
 
                     </div>
+                        <CircleBtn onClick={CalcCircle}>Calcular</CircleBtn>
 
                     <div className="result">
 

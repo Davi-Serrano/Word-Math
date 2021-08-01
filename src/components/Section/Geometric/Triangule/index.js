@@ -47,14 +47,14 @@ export const Triangle = () =>{
                     <label> Qual o tamanho da Base do Triângulo? </label>
                     <input type="number" min="1" id="height" />
                 
+                </div>
+
                     <TriaBtn onClick={CalcTriangle}>
                         <div className="calc">
                             Calcular
                         </div>
                      </TriaBtn>
                 
-                </div>
-
             <div className="result">
 
                 <h3>Área:{area}</h3>

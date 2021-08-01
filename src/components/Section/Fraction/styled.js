@@ -6,6 +6,11 @@ export const Title = styled.h2`
         padding-left: 50px;
         
         background-color: #FAFFFD;
+       
+        @media (max-width: 800px){
+            font-size: 25px;
+            padding-left: 15px;
+        }
 
 `
 
