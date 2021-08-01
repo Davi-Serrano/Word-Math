@@ -22,8 +22,8 @@ function CalcDivision () {
 
     if(!NumA || !NumB || !DenA || !DenB){
         alert("Por favor coloque um número válido em todos os campos!!")
-    }else{
-
+    }
+    else{
         var numerator = (NumA * DenB) + (NumB * DenA)
         var denominator = (DenA * DenB)
 
@@ -43,18 +43,23 @@ function CalcDivision () {
             numerator = numerator / 7
             denominator = denominator / 7
         }
-        while(numerator % 9 === 0 && denominator % 9 === 0){
-            numerator = numerator / 9
-            denominator = denominator / 9
+        while(numerator % 11 === 0 && denominator % 11 === 0){
+            numerator = numerator / 11
+            denominator = denominator / 11
         }
         while(numerator % 13 === 0 && denominator % 13 === 0){
             numerator = numerator / 13
             denominator = denominator / 13
         }
-       
+
         setNumerator(numerator)
         setDenominator(denominator)
-    }
+
+        if(numerator === denominator){
+            setNumerator( numerator * 0 + 1)
+            setDenominator(denominator * 0 + 1)
+        }
+        }
 }
     return(
 

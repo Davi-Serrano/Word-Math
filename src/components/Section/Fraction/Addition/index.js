@@ -44,9 +44,9 @@ function CalcAddition () {
             numerator = numerator / 7
             denominator = denominator / 7
         }
-        while(numerator % 9 === 0 && denominator % 9 === 0){
-            numerator = numerator / 9
-            denominator = denominator / 9
+        while(numerator % 11 === 0 && denominator % 11 === 0){
+            numerator = numerator / 11
+            denominator = denominator / 11
         }
         while(numerator % 13 === 0 && denominator % 13 === 0){
             numerator = numerator / 13
@@ -55,6 +55,11 @@ function CalcAddition () {
 
         setNumerator(numerator)
         setDenominator(denominator)
+
+        if(numerator === denominator){
+            setNumerator( numerator * 0 + 1)
+            setDenominator(denominator * 0 + 1)
+        }
     }
 
 

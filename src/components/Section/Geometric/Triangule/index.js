@@ -60,9 +60,9 @@ export const Triangle = () =>{
                 
             <div className="result">
 
-                <h3>Área:{area}</h3>
+                <h3>Área:{area.toFixed(2)}</h3>
                 <h3>Perímetro:{perimeter.toFixed(2)} </h3>
-                <h3>Hipotenusa: {hypotenuse}</h3>
+                <h3>Hipotenusa: {hypotenuse.toFixed(2)}</h3>
                
             </div>
                

@@ -60,7 +60,7 @@ export const GeoStyle = styled.div`
         display: flex;
         justify-content: space-around;
 
-        font-size: 20px;
+        font-size: 15px;
         width: 450px;
         h3{
             margin-right: 0.5em;
