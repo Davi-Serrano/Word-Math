@@ -24,7 +24,7 @@ export const Account = styled.div`
     height:84vh;
     width: 80vw;
     @media(max-width: 800px) {
-                 width: 98vw;
+                 width: 100vw;
                 }
 
 `
@@ -32,6 +32,7 @@ export const Account = styled.div`
 export const FractionStyle = styled.div`
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     
@@ -106,6 +107,9 @@ export const CalcBtn = styled.div`
 export const SinalMath = styled.div`
             font-size: 35px;
             margin-left: 35px;
+            @media (max-width: 800px){
+                margin-left: 10px;
+            }
 
 `
 
