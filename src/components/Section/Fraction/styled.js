@@ -20,9 +20,9 @@ export const Account = styled.div`
         align-items: center;
         justify-content: center;
         color:white;
-    
-    height:84vh;
-    width: 80vw;
+        
+        height:84vh;
+        width: 80vw;
     @media(max-width: 800px) {
                  width: 100vw;
                 }
@@ -32,11 +32,11 @@ export const Account = styled.div`
 export const FractionStyle = styled.div`
 
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     
     @media(max-width: 800px) {
+        flex-direction: column;
 
 
                  label{

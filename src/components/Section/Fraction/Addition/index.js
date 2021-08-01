@@ -32,6 +32,26 @@ function CalcAddition () {
             numerator = numerator / 2
             denominator = denominator / 2
         }
+        while(numerator % 3 === 0 && denominator % 3 === 0){
+            numerator = numerator / 3
+            denominator = denominator / 3
+        }
+        while(numerator % 5 === 0 && denominator % 5 === 0){
+            numerator = numerator / 5
+            denominator = denominator / 5
+        }
+        while(numerator % 7 === 0 && denominator % 7 === 0){
+            numerator = numerator / 7
+            denominator = denominator / 7
+        }
+        while(numerator % 9 === 0 && denominator % 9 === 0){
+            numerator = numerator / 9
+            denominator = denominator / 9
+        }
+        while(numerator % 13 === 0 && denominator % 13 === 0){
+            numerator = numerator / 13
+            denominator = denominator / 13
+        }
 
         setNumerator(numerator)
         setDenominator(denominator)
