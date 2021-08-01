@@ -4,7 +4,7 @@ export const Title = styled.h2`
         font-size: 55px;
 
         padding-left: 50px;
-        width: 100vw;
+       
         
         background-color: #FAFFFD;
 
@@ -29,7 +29,7 @@ export const GeoStyle = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 50%;
+        
         
         flex-wrap: wrap;
         
@@ -60,8 +60,14 @@ export const GeoStyle = styled.div`
         display: flex;
         justify-content: space-around;
 
-        font-size: 25px;
+        font-size: 20px;
         width: 450px;
+        h3{
+            margin-right: 0.5em;
+            &::last-child{
+                    margin-right: 0px;    
+                }
+        }
         
     }
 
@@ -244,7 +250,7 @@ export const TriaBtn = styled.div`
 
 export const IndxBtnNext = styled.div`
 
-height: 80px;
+        height: 80px;
         width: 80px;
         
         display: flex;

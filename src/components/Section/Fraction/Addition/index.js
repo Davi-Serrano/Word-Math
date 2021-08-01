@@ -25,9 +25,16 @@ function CalcAddition () {
     if(!NumA || !NumB || !DenA || !DenB){
         alert("Por favor coloque um número válido em todos os campos!!")
     }else{
+        var numerator = (NumA * DenB) + (NumB * DenA)
+        var denominator = (DenA * DenB)
 
-        setNumerator((NumA * DenB) + (NumB * DenA))
-        setDenominator(DenA * DenB)
+        while(numerator % 2 === 0 && denominator % 2 === 0){
+            numerator = numerator / 2
+            denominator = denominator / 2
+        }
+
+        setNumerator(numerator)
+        setDenominator(denominator)
     }
 
 
