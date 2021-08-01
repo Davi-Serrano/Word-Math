@@ -24,7 +24,7 @@ function CalcSubtratcion () {
     if(!NumA || !NumB || !DenA || !DenB){
         alert("Por favor coloque um número válido em todos os campos!!")
     }else{
-        var numerator = (NumA * DenB) + (NumB * DenA)
+        var numerator = (NumA * DenB) - (NumB * DenA)
         var denominator = (DenA * DenB)
 
         while(numerator % 2 === 0 && denominator % 2 === 0){

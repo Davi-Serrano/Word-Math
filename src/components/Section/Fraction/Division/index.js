@@ -24,8 +24,8 @@ function CalcDivision () {
         alert("Por favor coloque um número válido em todos os campos!!")
     }
     else{
-        var numerator = (NumA * DenB) + (NumB * DenA)
-        var denominator = (DenA * DenB)
+        var numerator = (NumA * DenA)
+        var denominator = (DenA * NumB)
 
         while(numerator % 2 === 0 && denominator % 2 === 0){
             numerator = numerator / 2
