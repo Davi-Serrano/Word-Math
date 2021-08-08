@@ -1,7 +1,7 @@
 <h1>Word Math<h1>
  
   <h4>Descrição</h4>
-  SPA que resolve problemas "simples" de matemática sobre: Frações, Geometria e Função do primeiro grau.
+  <p>SPA que resolve problemas "simples" de matemática sobre: Frações, Geometria e Função do primeiro grau.</p>
 
   ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/82523921/128639135-f003f2e0-5dc7-48e6-8a8d-e3d751a2fc35.gif)
   
