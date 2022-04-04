@@ -72,7 +72,7 @@ export const MenuList = () => {
                         </li>
                         <li onClick= { () => {  setIndexPage( IndexPage * 0 + 1) 
                                                         setShowMenu(true)}}
-                                >Retâgulo
+                                >Retângulo
                         </li>
                         <li onClick= { () => {  setIndexPage( IndexPage * 0 + 2) 
                                                         setShowMenu(true)}}
